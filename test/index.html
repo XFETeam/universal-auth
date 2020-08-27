@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Title</title>
 <!--    <script>-->
 <!--        if (!window.Promise) {-->
@@ -14,11 +15,16 @@
         };
     </script>
 
-    <script src="../lib/index.js?11111"></script>
+    <script src="../lib/1.0.0/universal-auth.js"></script>
     <script>alert('XOYO_AUTH: ' + JSON.stringify(window.XOYO_AUTH))</script>
     <script>alert('THIRD_PARTY_AUTH' + JSON.stringify(window.THIRD_PARTY_AUTH))</script>
 </head>
 <body>
-    <script>console.log('main script')</script>
+    <script>
+        document.writeln('<p>XOYOAUTH</p>');
+        document.writeln(JSON.stringify(window.XOYO_AUTH))
+        document.writeln('<p>THIRD_PARTY_AUTH</p>');
+        document.writeln(JSON.stringify(window.THIRD_PARTY_AUTH))
+    </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   "description": "通用授权",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production && git add lib/"
   },
   "keywords": [
     "universal",

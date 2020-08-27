@@ -57,9 +57,9 @@
     const writelnContent = `
         <script>${require('!!raw-loader!./tools').default}</script>
         <script>${require('!!raw-loader!./global-config').default}</script>
-        ${xoyoAuth(xoyo)}
         ${dailyAuth(daily)}
         ${weixinQQAuth(weixinQQ)}
+        ${xoyoAuth(xoyo)}
         ${debugInfo(debug)}
     `;
 
