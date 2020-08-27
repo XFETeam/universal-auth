@@ -16,7 +16,7 @@
          debug: false /*是否开启debug模式，开启会alert授权信息, 默认为false*/
       }
    </script>
-   <script src="//zhcdn01.xoyo.com/xassets/lib/daily-app-auth/{VERSION}/daily-app-auth.js" crossOrigin="anonymous" />
+   <script src="//zhcdn01.xoyo.com/xassets/lib/universal-auth/{VERSION}/universal-auth.js" crossOrigin="anonymous" />
  ...
 </head>
 ```
