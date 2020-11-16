@@ -120,6 +120,10 @@ QQ成功
 }
 ```
 
+## 环境
+
+当前工具库在默认情况下仅使用 test 测试环境. 如果需要切换至生产环境需要将 `<html>` 标签修改为 `<html data-env="master">`. 后续版本中切换生产环境将 (保留原方式的同时) 拓展为通过代码配置环境.
+
 ## API
 
 ### window.__XFE_UNIVERSAL_AUTH_CONFIG__
