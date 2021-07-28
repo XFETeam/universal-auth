@@ -17,6 +17,6 @@
     }
   };
   document.writeln(
-    '<script src="//' + getXoyoInfoUrl + '/passport/common_api/get_info?ts=' + new Date().getTime() + '&callback=__GET_XOYO_INFO__">' + '</' + 'script>'
+    '<script src="https://' + getXoyoInfoUrl + '/passport/common_api/get_info?ts=' + new Date().getTime() + '&callback=__GET_XOYO_INFO__">' + '</' + 'script>'
   );
 })(window.__tools__, window.GLOBAL_CONFIG);

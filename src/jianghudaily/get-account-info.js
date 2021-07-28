@@ -38,6 +38,6 @@
     }
   };
   document.writeln(
-    '<script src="//' + xoyoUrl + '/core/jhdaily/get_current_account?ts=' + new Date().getTime() + '&callback=__DAILY_APP_AUTH__">' + '<' + '/' + 'script>'
+    '<script src="https://' + xoyoUrl + '/core/jhdaily/get_current_account?ts=' + new Date().getTime() + '&callback=__DAILY_APP_AUTH__">' + '<' + '/' + 'script>'
   );
 })(window.__tools__, window.GLOBAL_CONFIG);

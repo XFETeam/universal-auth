@@ -19,7 +19,7 @@
     }
   };
   document.writeln(
-    '<script src="//' +
+    '<script src="https://' +
       xoyoUrl +
       '/core/thirdlogin/get_auth_url?ts=' +
       new Date().getTime() +

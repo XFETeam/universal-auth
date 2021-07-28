@@ -34,7 +34,7 @@
     }
   };
   document.writeln(
-    '<script src="//' +
+    '<script src="https://' +
       xoyoUrl +
       '/core/jhdaily/login_by_token?ts=' +
       new Date().getTime() +

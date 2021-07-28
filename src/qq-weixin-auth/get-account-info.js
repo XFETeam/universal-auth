@@ -50,7 +50,7 @@
     }
   };
   document.writeln(
-    '<script src="//' +
+    '<script src="https://' +
     xoyoUrl +
     '/core/thirdlogin/get_current_user_info?ts=' +
     new Date().getTime() +
