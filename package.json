@@ -1,7 +1,7 @@
 {
   "name": "universal-auth",
-  "version": "1.0.0",
-  "description": "通用授权",
+  "version": "1.0.1",
+  "description": "剑网3通用授权",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production && git add lib/"
@@ -11,14 +11,15 @@
     "auth"
   ],
   "author": "huangzhe",
-  "license": "ISC",
+  "maintainers": ["sheailun"],
+  "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
-    "babel-loader": "^8.1.0",
-    "raw-loader": "^4.0.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "@babel/cli": "7.10.5",
+    "@babel/core": "7.11.4",
+    "@babel/preset-env": "7.11.0",
+    "babel-loader": "8.1.0",
+    "raw-loader": "4.0.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12"
   }
 }

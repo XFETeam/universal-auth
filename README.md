@@ -14,6 +14,7 @@
          weixinQQ: true, /*是否开启微信QQ授权, 默认为true*/
          xoyo: true, /*是否开启逍遥授权, 默认为true*/
          debug: false /*是否开启debug模式，开启会alert授权信息, 默认为false*/
+         isMaster: false /*是否使用正式环境, 如果设置为 true 后所以内置请求将切换到正式环境地址*/
       }
    </script>
    <script src="//zhcdn01.xoyo.com/xassets/lib/universal-auth/{VERSION}/universal-auth.js" crossOrigin="anonymous" ></script>
@@ -122,7 +123,10 @@ QQ成功
 
 ## 环境
 
-当前工具库在默认情况下仅使用 test 测试环境. 如果需要切换至生产环境需要将 `<html>` 标签修改为 `<html data-env="master">`. 后续版本中切换生产环境将 (保留原方式的同时) 拓展为通过代码配置环境.
+当前工具库在默认情况下仅使用 test 测试环境. 如果需要切换至生产环境有2种方式处理:
+1. `<html>` 标签修改为 `<html data-env="master">`. 后续版本中切换生产环境将 (保留原方式的同时) 拓展为通过代码配置环境.
+2. 在` window.__XFE_UNIVERSAL_AUTH_CONFIG__` 加入 `isMaster`, 当前比前第一点优先级高
+
 
 ## API
 
@@ -135,12 +139,17 @@ QQ成功
 | xoyo | 是否开启逍遥授权 | boolean | true |
 | limitOnlyHasJx3RoleAccessInDaily | 在接入脚本前设置该值，是否限制仅拥有剑三角色账户才可进入，否则跳转无激活角色错误提示页面，默认关闭，开启会影响性能，请经确认需要开启后开启, 默认为false | boolean | false |
 | debug | 是否开启debug模式，开启会alert授权信息, 默认为false | boolean | false |
+| isMaster | 是否使用生产接口, 默认为 false | boolean | false |
 
 如果设置 `window.LIMIT_ONLY_HAS_JX3_ROLE_ACCESS_IN_DAILY` 为 `true` 会多返回区服角色信息(红框内数据)
 
 ![返回数据](./docs/images/daily-auth-success-return.png)
 
 ## ChangeLog
+
+### 1.0.1 (2021-07-29)
+* feat: 加入 `isMaster` 判断参数方便开发直接切换环境
+* feat: 将内置的 `//` 无协议统一更改为 `https://`
 
 ### 1.0.0
 * 首次提交
